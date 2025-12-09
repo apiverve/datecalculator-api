@@ -1,0 +1,89 @@
+openapi: 3.0.4
+info:
+  title: Date Calculator
+  description: Date Calculator is a simple tool for calculating date differences. It returns the calculated date difference based on the dates provided.
+  termsOfService: https://apiverve.com/terms/
+  contact:
+    name: APIVerve Support
+    email: hello@apiverve.com
+    url: https://apiverve.com/contact
+  version: 1.0.9
+externalDocs:
+  description: Learn more about APIVerve
+  url: https://docs.apiverve.com?utm_source=openapi
+servers:
+- url: https://api.apiverve.com/
+paths:
+  /v1/datecalculator:
+    get:
+      summary: Calculate Date Differences
+      description: Date Calculator is a simple tool for calculating date differences. It returns the calculated date difference based on the dates provided.
+      operationId: datecalculator
+      parameters:
+      - name: start
+        in: query
+        schema:
+          type: string
+        required: true
+        description: 'The start date for calculating the difference (format: YYYY-MM-DD)'
+        example: 2022-01-01
+      - name: end
+        in: query
+        schema:
+          type: string
+        required: true
+        description: 'The end date for calculating the difference (format: YYYY-MM-DD)'
+        example: 2024-08-31
+      responses:
+        '200':
+          description: Successful Response
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  status:
+                    type: string
+                    description: status
+                  error:
+                    type: string
+                    description: error
+                  data:
+                    type: string
+                    description: data
+              example:
+                status: ok
+                error: 
+                data:
+                  minutes: 524160
+                  hours: 8736
+                  days: 364
+                  weeks: 52
+                  months: 11
+                  years: 0
+                  start:
+                    date: 2022-01-01
+                    day: Saturday
+                    month: January
+                    year: '2022'
+                    words: Saturday, January 1st 2022
+                  end:
+                    date: 2022-12-31
+                    day: Saturday
+                    month: December
+                    year: '2022'
+                    words: Saturday, December 31st 2022
+        '401':
+          description: Your request was not authorized, or your API Key was invalid
+        '404':
+          description: Requested resource was not found
+        '500':
+          description: A server error has occured, try again later
+components:
+  securitySchemes:
+    api_key:
+      type: apiKey
+      name: x-api-key
+      in: header
+security:
+- api_key: []
