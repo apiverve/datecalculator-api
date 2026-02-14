@@ -1,39 +1,41 @@
 openapi: 3.0.4
 info:
   title: Date Calculator
-  description: Date Calculator is a simple tool for calculating date differences. It returns the calculated date difference based on the dates provided.
+  description: >-
+    Date Calculator is a simple tool for calculating date differences. It
+    returns the calculated date difference based on the dates provided.
   termsOfService: https://apiverve.com/terms/
   contact:
     name: APIVerve Support
     email: hello@apiverve.com
     url: https://apiverve.com/contact
-  version: 1.0.9
+  version: 1.0.0
 externalDocs:
   description: Learn more about APIVerve
   url: https://docs.apiverve.com?utm_source=openapi
 servers:
-- url: https://api.apiverve.com/
+  - url: https://api.apiverve.com/
 paths:
   /v1/datecalculator:
     get:
       summary: Calculate Date Differences
-      description: Date Calculator is a simple tool for calculating date differences. It returns the calculated date difference based on the dates provided.
+      description: Calculate date differences based on the dates provided
       operationId: datecalculator
       parameters:
-      - name: start
-        in: query
-        schema:
-          type: string
-        required: true
-        description: 'The start date for calculating the difference (format: YYYY-MM-DD)'
-        example: 2022-01-01
-      - name: end
-        in: query
-        schema:
-          type: string
-        required: true
-        description: 'The end date for calculating the difference (format: YYYY-MM-DD)'
-        example: 2024-08-31
+        - name: start
+          in: query
+          schema:
+            type: string
+          required: true
+          description: 'The start date for calculating the difference (format: YYYY-MM-DD)'
+          example: '2022-01-01'
+        - name: end
+          in: query
+          schema:
+            type: string
+          required: true
+          description: 'The end date for calculating the difference (format: YYYY-MM-DD)'
+          example: '2024-08-31'
       responses:
         '200':
           description: Successful Response
@@ -49,11 +51,11 @@ paths:
                     type: string
                     description: error
                   data:
-                    type: string
+                    type: object
                     description: data
               example:
                 status: ok
-                error: 
+                error: null
                 data:
                   minutes: 524160
                   hours: 8736
@@ -62,13 +64,13 @@ paths:
                   months: 11
                   years: 0
                   start:
-                    date: 2022-01-01
+                    date: '2022-01-01'
                     day: Saturday
                     month: January
                     year: '2022'
                     words: Saturday, January 1st 2022
                   end:
-                    date: 2022-12-31
+                    date: '2022-12-31'
                     day: Saturday
                     month: December
                     year: '2022'
@@ -78,7 +80,7 @@ paths:
         '404':
           description: Requested resource was not found
         '500':
-          description: A server error has occured, try again later
+          description: A server error has occurred, try again later
 components:
   securitySchemes:
     api_key:
@@ -86,4 +88,4 @@ components:
       name: x-api-key
       in: header
 security:
-- api_key: []
+  - api_key: []
