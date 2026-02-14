@@ -12,13 +12,8 @@ public class BasicExample {
         DateCalculatorAPIClient client = new DateCalculatorAPIClient("YOUR_API_KEY_HERE");
 
         try {
-            // Query parameters
-            Map&lt;String, Object&gt; parameters &#x3D; new HashMap&lt;&gt;();
-        parameters.put(&quot;start&quot;, &quot;2022-01-01&quot;);
-        parameters.put(&quot;end&quot;, &quot;2024-08-31&quot;);
-
-            // Execute the API request
-            APIResponse response = client.execute(parameters);
+            // Execute the API request (no parameters required)
+            APIResponse response = client.execute(null);
 
             // Check if the request was successful
             if (response.isSuccess()) {
