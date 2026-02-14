@@ -17,14 +17,11 @@ def call_datecalculator_api():
     Make a GET request to the Date Calculator API
     """
     try:
-        # Query parameters
-        params &#x3D; {&#x27;start&#x27;: &#x27;2022-01-01&#x27;, &#x27;end&#x27;: &#x27;2024-08-31&#x27;}
-
         headers = {
             'x-api-key': API_KEY
         }
 
-        response = requests.get(API_URL, headers=headers, params=params)
+        response = requests.get(API_URL, headers=headers)
 
         # Raise exception for HTTP errors
         response.raise_for_status()
