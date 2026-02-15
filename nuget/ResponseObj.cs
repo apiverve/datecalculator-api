@@ -66,7 +66,6 @@ namespace APIVerve.API.DateCalculator
         public string Month { get; set; }
 
         [JsonProperty("year")]
-        [JsonConverter(typeof(ParseStringConverter))]
         public long Year { get; set; }
 
         [JsonProperty("words")]
