@@ -44,7 +44,10 @@ from apiverve_datecalculator.apiClient import DatecalculatorAPIClient
 # Initialize the client with your APIVerve API key
 api = DatecalculatorAPIClient("[YOUR_API_KEY]")
 
-query = { "start": "2022-01-01", "end": "2024-08-31" }
+query = {
+    "start": "2022-01-01",
+    "end": "2024-08-31"
+}
 
 try:
     # Make the API call
@@ -82,7 +85,10 @@ Using the API client, you can perform requests to the API.
 ###### Define Query
 
 ```python
-query = { "start": "2022-01-01", "end": "2024-08-31" }
+query = {
+    "start": "2022-01-01",
+    "end": "2024-08-31"
+}
 ```
 
 ###### Simple Request
@@ -139,7 +145,10 @@ from apiverve_datecalculator.apiClient import DatecalculatorAPIClient, Datecalcu
 
 api = DatecalculatorAPIClient("[YOUR_API_KEY]")
 
-query = { "start": "2022-01-01", "end": "2024-08-31" }
+query = {
+    "start": "2022-01-01",
+    "end": "2024-08-31"
+}
 
 try:
     result = api.execute(query)
@@ -160,7 +169,10 @@ from apiverve_datecalculator.apiClient import DatecalculatorAPIClient, Datecalcu
 
 api = DatecalculatorAPIClient("[YOUR_API_KEY]")
 
-query = { "start": "2022-01-01", "end": "2024-08-31" }
+query = {
+    "start": "2022-01-01",
+    "end": "2024-08-31"
+}
 
 try:
     result = api.execute(query)
@@ -194,7 +206,10 @@ The client supports the context manager protocol for automatic resource cleanup:
 ```python
 from apiverve_datecalculator.apiClient import DatecalculatorAPIClient, DatecalculatorAPIClientError
 
-query = { "start": "2022-01-01", "end": "2024-08-31" }
+query = {
+    "start": "2022-01-01",
+    "end": "2024-08-31"
+}
 
 # Using context manager ensures proper cleanup
 with DatecalculatorAPIClient("[YOUR_API_KEY]") as api:
@@ -220,7 +235,10 @@ from apiverve_datecalculator.apiClient import DatecalculatorAPIClient
 # Enable debug mode
 api = DatecalculatorAPIClient("[YOUR_API_KEY]", debug=True)
 
-query = { "start": "2022-01-01", "end": "2024-08-31" }
+query = {
+    "start": "2022-01-01",
+    "end": "2024-08-31"
+}
 
 # Debug information will be printed to console
 result = api.execute(query)
@@ -235,8 +253,12 @@ from apiverve_datecalculator.apiClient import DatecalculatorAPIClient
 
 api = DatecalculatorAPIClient("[YOUR_API_KEY]")
 
+query = {
+    "start": "2022-01-01",
+    "end": "2024-08-31"
+}
+
 try:
-    query = { "start": "2022-01-01", "end": "2024-08-31" }
     result = api.execute(query)
     print(result)
 finally:
