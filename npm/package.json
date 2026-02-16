@@ -1,6 +1,6 @@
 {
   "name": "@apiverve/datecalculator",
-  "version": "1.1.13",
+  "version": "1.1.14",
   "description": "Date Calculator is a simple tool for calculating date differences. It returns the calculated date difference based on the dates provided.",
   "main": "index.js",
   "types": "index.d.ts",
