@@ -13,7 +13,13 @@ const API_URL = 'https://api.apiverve.com/v1/datecalculator';
  */
 async function callDateCalculatorAPI() {
   try {
-    const response = await fetch(API_URL, {
+    // Query parameters
+    const params &#x3D; new URLSearchParams({
+            start: &#x27;2022-01-01&#x27;,
+            end: &#x27;2024-08-31&#x27;
+        });
+
+    const response = await fetch(`${API_URL}?${params}`, {
       method: 'GET',
       headers: {
         'x-api-key': API_KEY
