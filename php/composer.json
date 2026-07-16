@@ -1,0 +1,49 @@
+{
+    "name": "apiverve/datecalculator",
+    "description": "Date Calculator is a simple tool for calculating date differences. It returns the calculated date difference based on the dates provided.",
+    "version": "1.2.0",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "APIVerve",
+            "email": "hello@apiverve.com",
+            "homepage": "https://apiverve.com"
+        }
+    ],
+    "keywords": [
+        "api",
+        "apiverve",
+        "datecalculator",
+        "date calculator",
+        "date calculator api",
+        "date calculator tool",
+        "date calculator software",
+        "date calculator service"
+    ],
+    "homepage": "https://apiverve.com/marketplace/datecalculator?utm_source=php&utm_medium=homepage",
+    "support": {
+        "email": "hello@apiverve.com",
+        "docs": "https://docs.apiverve.com/ref/datecalculator",
+        "source": "https://github.com/apiverve/datecalculator-API/tree/main/php"
+    },
+    "require": {
+        "php": ">=7.4",
+        "guzzlehttp/guzzle": "^7.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "APIVerve\\Datecalculator\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "APIVerve\\Datecalculator\\Tests\\": "tests/"
+        }
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}
