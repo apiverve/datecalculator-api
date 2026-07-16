@@ -25,27 +25,30 @@ namespace APIVerve.API.DateCalculator
 
         [JsonProperty("data")]
         public Data Data { get; set; }
+
+        [JsonProperty("premium")]
+        public Premium Premium { get; set; }
     }
 
     public partial class Data
     {
         [JsonProperty("minutes")]
-        public long Minutes { get; set; }
+        public long? Minutes { get; set; }
 
         [JsonProperty("hours")]
-        public long Hours { get; set; }
+        public long? Hours { get; set; }
 
         [JsonProperty("days")]
-        public long Days { get; set; }
+        public long? Days { get; set; }
 
         [JsonProperty("weeks")]
-        public long Weeks { get; set; }
+        public long? Weeks { get; set; }
 
         [JsonProperty("months")]
-        public long Months { get; set; }
+        public long? Months { get; set; }
 
         [JsonProperty("years")]
-        public long Years { get; set; }
+        public long? Years { get; set; }
 
         [JsonProperty("start")]
         public End Start { get; set; }
@@ -57,7 +60,7 @@ namespace APIVerve.API.DateCalculator
     public partial class End
     {
         [JsonProperty("date")]
-        public DateTimeOffset Date { get; set; }
+        public DateTimeOffset? Date { get; set; }
 
         [JsonProperty("day")]
         public string Day { get; set; }
@@ -66,9 +69,21 @@ namespace APIVerve.API.DateCalculator
         public string Month { get; set; }
 
         [JsonProperty("year")]
-        public long Year { get; set; }
+        public long? Year { get; set; }
 
         [JsonProperty("words")]
         public string Words { get; set; }
+    }
+
+    public partial class Premium
+    {
+        [JsonProperty("message")]
+        public string Message { get; set; }
+
+        [JsonProperty("upgrade_url")]
+        public Uri UpgradeUrl { get; set; }
+
+        [JsonProperty("locked_fields")]
+        public string[] LockedFields { get; set; }
     }
 }
