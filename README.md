@@ -192,11 +192,47 @@ x-api-key: YOUR_API_KEY_HERE
 Get your API key: [https://apiverve.com](https://apiverve.com)
 
 ### Response Format
-All responses are JSON with this structure:
+
+Every APIVerve endpoint returns the same envelope — check `status`, then read `data`:
+
 ```json
 {
   "status": "ok",
+  "error": null,
   "data": { ... }
+}
+```
+
+### Example Response
+
+A real response from the Date Calculator API:
+
+```json
+{
+  "status": "ok",
+  "error": null,
+  "data": {
+    "minutes": 524160,
+    "hours": 8736,
+    "days": 364,
+    "weeks": 52,
+    "months": 11,
+    "years": 0,
+    "start": {
+      "date": "2022-01-01",
+      "day": "Saturday",
+      "month": "January",
+      "year": "2022",
+      "words": "Saturday, January 1st 2022"
+    },
+    "end": {
+      "date": "2022-12-31",
+      "day": "Saturday",
+      "month": "December",
+      "year": "2022",
+      "words": "Saturday, December 31st 2022"
+    }
+  }
 }
 ```
 
