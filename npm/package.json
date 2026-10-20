@@ -1,7 +1,7 @@
 {
   "name": "@apiverve/datecalculator",
-  "version": "1.2.0",
-  "description": "Date Calculator is a simple tool for calculating date differences. It returns the calculated date difference based on the dates provided.",
+  "version": "1.2.2",
+  "description": "Date Calculator computes the difference between two calendar dates in minutes, hours, days, weeks, months, and years. Supply start and end dates in YYYY-MM-DD format to receive exact interval breakdowns.",
   "main": "index.js",
   "types": "index.d.ts",
   "sideEffects": false,
@@ -23,7 +23,7 @@
     "directory": "npm"
   },
   "keywords": [
-    "date calculator", "date calculator api", "date calculator tool", "date calculator software", "date calculator service"
+    "date calculator api", "days between dates", "date difference", "calculate date difference", "calculate days between two dates"
   ],
   "author": {
     "name": "APIVerve",
@@ -34,7 +34,7 @@
   "bugs": {
     "url": "https://github.com/apiverve/datecalculator-api/issues"
   },
-  "homepage": "https://apiverve.com/marketplace/datecalculator?utm_source=npm&utm_medium=homepage",
+  "homepage": "https://apiverve.com/marketplace/datecalculator?utm_source=npm&utm_medium=referral&utm_content=homepage",
   "devDependencies": {
     "mocha": "^11.0.1",
     "chai": "^5.1.2",
