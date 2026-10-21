@@ -1,6 +1,6 @@
 # Date Calculator API - PHP Package
 
-Date Calculator is a simple tool for calculating date differences. It returns the calculated date difference based on the dates provided.
+Date Calculator computes the difference between two calendar dates in minutes, hours, days, weeks, months, and years. Supply start and end dates in YYYY-MM-DD format to receive exact interval breakdowns.
 
 ## Installation
 
@@ -103,11 +103,11 @@ $client = new Client(
 
 ## Documentation
 
-For more information, visit the [API Documentation](https://docs.apiverve.com/ref/datecalculator?utm_source=packagist&utm_medium=readme).
+For more information, visit the [API Documentation](https://docs.apiverve.com/ref/datecalculator?utm_source=packagist&utm_medium=referral&utm_content=readme).
 
 ## Support
 
-- Website: [https://apiverve.com/marketplace/datecalculator?utm_source=php&utm_medium=readme](https://apiverve.com/marketplace/datecalculator?utm_source=php&utm_medium=readme)
+- Website: [https://apiverve.com/marketplace/datecalculator?utm_source=php&utm_medium=referral&utm_content=readme](https://apiverve.com/marketplace/datecalculator?utm_source=php&utm_medium=referral&utm_content=readme)
 - Email: hello@apiverve.com
 
 ## License
