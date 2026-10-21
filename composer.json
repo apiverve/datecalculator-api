@@ -1,7 +1,7 @@
 {
     "name": "apiverve/datecalculator",
-    "description": "Date Calculator is a simple tool for calculating date differences. It returns the calculated date difference based on the dates provided.",
-    "version": "1.2.0",
+    "description": "Date Calculator computes the difference between two calendar dates in minutes, hours, days, weeks, months, and years. Supply start and end dates in YYYY-MM-DD format to receive exact interval breakdowns.",
+    "version": "1.2.2",
     "type": "library",
     "license": "MIT",
     "authors": [
@@ -15,13 +15,13 @@
         "api",
         "apiverve",
         "datecalculator",
-        "date calculator",
         "date calculator api",
-        "date calculator tool",
-        "date calculator software",
-        "date calculator service"
+        "days between dates",
+        "date difference",
+        "calculate date difference",
+        "calculate days between two dates"
     ],
-    "homepage": "https://apiverve.com/marketplace/datecalculator?utm_source=php&utm_medium=homepage",
+    "homepage": "https://apiverve.com/marketplace/datecalculator?utm_source=php&utm_medium=referral&utm_content=homepage",
     "support": {
         "email": "hello@apiverve.com",
         "docs": "https://docs.apiverve.com/ref/datecalculator",
