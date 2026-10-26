@@ -1,7 +1,7 @@
 {
     "name": "apiverve/datecalculator",
     "description": "Date Calculator computes the difference between two calendar dates in minutes, hours, days, weeks, months, and years. Supply start and end dates in YYYY-MM-DD format to receive exact interval breakdowns.",
-    "version": "1.2.2",
+    "version": "1.2.3",
     "type": "library",
     "license": "MIT",
     "authors": [
