@@ -46,7 +46,7 @@ final _formatPatterns = {
 
 /// Date Calculator API client.
 ///
-/// For more information, visit: https://apiverve.com/marketplace/datecalculator?utm_source=dart&utm_medium=readme
+/// For more information, visit: https://apiverve.com/marketplace/datecalculator?utm_source=dart&utm_medium=referral&utm_content=readme
 ///
 /// Parameters:
 /// * [start] (required) - The start date for calculating the difference (format: YYYY-MM-DD) [format: date]

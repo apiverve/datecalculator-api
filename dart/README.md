@@ -1,11 +1,11 @@
 # Date Calculator API - Dart/Flutter Client
 
-Date Calculator is a simple tool for calculating date differences. It returns the calculated date difference based on the dates provided.
+Date Calculator computes the difference between two calendar dates in minutes, hours, days, weeks, months, and years. Supply start and end dates in YYYY-MM-DD format to receive exact interval breakdowns.
 
 [![pub package](https://img.shields.io/pub/v/apiverve_datecalculator.svg)](https://pub.dev/packages/apiverve_datecalculator)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-This is the Dart/Flutter client for the [Date Calculator API](https://apiverve.com/marketplace/datecalculator?utm_source=dart&utm_medium=readme).
+This is the Dart/Flutter client for the [Date Calculator API](https://apiverve.com/marketplace/datecalculator?utm_source=dart&utm_medium=referral&utm_content=readme).
 
 ## Installation
 
@@ -13,7 +13,7 @@ Add this to your `pubspec.yaml`:
 
 ```yaml
 dependencies:
-  apiverve_datecalculator: ^1.1.14
+  apiverve_datecalculator: ^1.2.3
 ```
 
 Then run:
@@ -79,12 +79,12 @@ void main() async {
 
 ## API Reference
 
-- **API Home:** [Date Calculator API](https://apiverve.com/marketplace/datecalculator?utm_source=dart&utm_medium=readme)
-- **Documentation:** [docs.apiverve.com/ref/datecalculator](https://docs.apiverve.com/ref/datecalculator?utm_source=dart&utm_medium=readme)
+- **API Home:** [Date Calculator API](https://apiverve.com/marketplace/datecalculator?utm_source=dart&utm_medium=referral&utm_content=readme)
+- **Documentation:** [docs.apiverve.com/ref/datecalculator](https://docs.apiverve.com/ref/datecalculator?utm_source=dart&utm_medium=referral&utm_content=readme)
 
 ## Authentication
 
-All requests require an API key. Get yours at [apiverve.com](https://apiverve.com?utm_source=dart&utm_medium=readme).
+All requests require an API key. Get yours at [apiverve.com](https://apiverve.com?utm_source=dart&utm_medium=referral&utm_content=readme).
 
 ## License
 
@@ -92,4 +92,4 @@ MIT License - see [LICENSE](LICENSE) for details.
 
 ---
 
-Built with Dart for [APIVerve](https://apiverve.com?utm_source=dart&utm_medium=readme)
+Built with Dart for [APIVerve](https://apiverve.com?utm_source=dart&utm_medium=referral&utm_content=readme)
