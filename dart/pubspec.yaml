@@ -1,6 +1,6 @@
 name: apiverve_datecalculator
 description: "Date Calculator computes the difference between two calendar dates in minutes, hours, days, weeks, months, and years. Supply start and end dates in YYYY-MM-DD format to receive exact interval breakdowns."
-version: 1.2.3
+version: 1.2.4
 homepage: https://apiverve.com/marketplace/datecalculator?utm_source=dart&utm_medium=referral&utm_content=homepage
 repository: https://github.com/apiverve/datecalculator-api/tree/main/dart
 
